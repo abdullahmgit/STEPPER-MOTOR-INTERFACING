@@ -67,9 +67,12 @@ L1:      DEC DX
 
          HLT                  ; Stop
 
-DATA:    DB 09H, 05H, 06H, 0AH ; Array of data
+DATA:DB 09H, 05H, 06H, 0AH ; Array of data
 ```
 ## OUTPUT OF THE PROGRAM:
+<img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/01004e24-72bd-4269-bc82-8f69dbea833f" />
+<img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/80d66ee0-269c-4617-bdf9-c4401c571d41" />
+
 
 ## RESULT
 
