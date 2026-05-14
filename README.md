@@ -15,16 +15,13 @@ To write an assembly language program in 8086 to rotate the motor at different s
 | 4     | Stepper Motor               | -               | 1        |
 
 ---
-
 ## THEORY
 A motor in which the rotor is able to assume only discrete stationary angular positions is a **stepper motor**. The rotary motion occurs in a stepwise manner from one equilibrium position to the next.  
 
 **Two-phase scheme:** Any two adjacent stator windings are energized. There are two magnetic fields active in quadrature and none of the rotor pole faces can be in direct alignment with the stator poles. A partial but symmetric alignment of the rotor poles is of course possible.
-
 ---
 ## ALGORITHM
 For running the stepper motor in clockwise and anticlockwise directions:
-
 1. Get the first data from the lookup table.  
 2. Initialize the counter and move data into the accumulator.  
 3. Drive the stepper motor circuitry and introduce delay.  
@@ -32,7 +29,6 @@ For running the stepper motor in clockwise and anticlockwise directions:
 5. Repeat the above procedure both for backward and forward directions.  
 ---
 ## SWITCHING SEQUENCE OF STEPPER MOTOR
-
 | Memory Location | A1 | A2 | B1 | B2 | Hex Code |
 |-----------------|----|----|----|----|----------|
 | 1200            | 1  | 0  | 0  | 0  | 09H      |
@@ -41,7 +37,6 @@ For running the stepper motor in clockwise and anticlockwise directions:
 | 1203            | 1  | 0  | 1  | 0  | 0AH      |
 ---
 ## PROGRAM
-
 ```asm
 ; Stepper Motor Interfacing Program in 8086 Assembly
 
@@ -67,6 +62,5 @@ DATA:DB 09H, 05H, 06H, 0AH ; Array of data
 ## OUTPUT OF THE PROGRAM:
 <img width="604" height="386" alt="Screenshot 2026-05-14 115944" src="https://github.com/user-attachments/assets/db8308b6-d49b-4153-ac4c-a0c11271fd93" />
 <img width="597" height="371" alt="Screenshot 2026-05-14 115930" src="https://github.com/user-attachments/assets/cbe552be-6ffe-4af0-863d-2ad1c29c542f" />
-
 ## RESULT
 Thus, the assembly language program for rotating the stepper motor in both clockwise and anticlockwise directions was written and verified.
