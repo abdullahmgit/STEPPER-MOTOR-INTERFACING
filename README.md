@@ -22,7 +22,6 @@ A motor in which the rotor is able to assume only discrete stationary angular po
 **Two-phase scheme:** Any two adjacent stator windings are energized. There are two magnetic fields active in quadrature and none of the rotor pole faces can be in direct alignment with the stator poles. A partial but symmetric alignment of the rotor poles is of course possible.
 
 ---
-
 ## ALGORITHM
 For running the stepper motor in clockwise and anticlockwise directions:
 
@@ -31,9 +30,7 @@ For running the stepper motor in clockwise and anticlockwise directions:
 3. Drive the stepper motor circuitry and introduce delay.  
 4. Decrement the counter. If not zero, repeat from step (iii).  
 5. Repeat the above procedure both for backward and forward directions.  
-
 ---
-
 ## SWITCHING SEQUENCE OF STEPPER MOTOR
 
 | Memory Location | A1 | A2 | B1 | B2 | Hex Code |
@@ -42,9 +39,7 @@ For running the stepper motor in clockwise and anticlockwise directions:
 | 1201            | 0  | 1  | 0  | 1  | 05H      |
 | 1202            | 0  | 1  | 1  | 0  | 06H      |
 | 1203            | 1  | 0  | 1  | 0  | 0AH      |
-
 ---
-
 ## PROGRAM
 
 ```asm
@@ -73,7 +68,5 @@ DATA:DB 09H, 05H, 06H, 0AH ; Array of data
 <img width="604" height="386" alt="Screenshot 2026-05-14 115944" src="https://github.com/user-attachments/assets/db8308b6-d49b-4153-ac4c-a0c11271fd93" />
 <img width="597" height="371" alt="Screenshot 2026-05-14 115930" src="https://github.com/user-attachments/assets/cbe552be-6ffe-4af0-863d-2ad1c29c542f" />
 
-
 ## RESULT
-
 Thus, the assembly language program for rotating the stepper motor in both clockwise and anticlockwise directions was written and verified.
